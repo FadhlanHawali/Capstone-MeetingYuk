@@ -7,7 +7,7 @@ Aplikasi MeetingYuk Merchant dapat diunduh dengan mengunjungi link [berikut][apk
 
 # Arsitektur Project
 Aplikasi ini dibangun menggunakan arsitektur MVP (Model View Presenter).
-![alt text](https://miro.medium.com/max/1400/1*_BJNVJ369Z16Qo7BTcATRA.png)
+![alt text](mvp.png)
 - Model : Layer yang bertanggung jawab sebagai definisi aturan bagaimana data dapat diubah dan dimanipulasi.
 - View : Layer untuk menampilkan data dan memberikan interaksi ke pengguna
 - Presenter : Layer untuk menerima masukan dari pengguna melalui View dan memproses masukan dengan menggunakan bantuan data dari Model dan output akan dikembalikan lagi ke pengguna.
