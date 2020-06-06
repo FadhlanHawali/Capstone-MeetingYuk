@@ -48,6 +48,9 @@ app
 - [Fitur] Contract : berfungsi sebagai "kontrak" fungsi apa saja yang dapat dilakukan dalam sebuah View dan Presenter. Kontrak ini berfungsi sebagai skeleton nantinya fitur ini dapat melakukan hal apa saja
 - [Fitur] Presenter : berfungsi untuk mengolah data dari data yang dimasukkan oleh pengguna melalui View
 - Model : berfungsi untuk definisi aturan bagaimana data nantinya dapat diubah dan dimanipulasi. Data ini bisa berupa data dari live data (API) maupun data yang digunakan dalam database.
-- Utils : sebagai
+- Utils : folder yang berfungsi sebagai helper seperti konversi unix timestamp ke java timestamp, menampilkan loading animation, dll.
+- Database : berisi sebagai seluruh pengaturan yang berkaitan dengan penggunaan Room Database. Terdapat 2 folder lagi yaitu Converted dan DAO. Converter berfungsi untuk konversi data dengan tipe data kompleks (Array, JSONAray, Custom Class) menjadi ke bentuk tipe data simple (String) dan sebaliknya agar data dapat disimpan dalam Room Database. DAO berfungsi untuk menyimpan function yang berisi Query Query apa saja yang dapat dilakukan.
+- 
+
 
 [apkmeetingyuk]: https://drive.google.com/file/d/1aJFr735BzbhJ48iiIVwsgw0HJfZSwxRA/view?usp=sharing
