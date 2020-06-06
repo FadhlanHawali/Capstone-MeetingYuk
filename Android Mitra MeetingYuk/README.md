@@ -59,6 +59,8 @@ app
 - Database : berisi sebagai seluruh pengaturan yang berkaitan dengan penggunaan Room Database. Terdapat 2 folder lagi yaitu Converted dan DAO. Converter berfungsi untuk konversi data dengan tipe data kompleks (Array, JSONAray, Custom Class) menjadi ke bentuk tipe data simple (String) dan sebaliknya agar data dapat disimpan dalam Room Database. DAO berfungsi untuk menyimpan function yang berisi Query Query apa saja yang dapat dilakukan.
 
 - API : berisi sebagai deklarasi API saja yang akan digunakan beserta dengan deklarasi request dan response body yang akan digunakan. Terdapat 2 File yaitu APIUtils dan InterfaceAPI. APIUtils berfungsi sebagai file pembantu dalam mendeklarasikan kebutuhan API dalam kasus ini membangun Base URL API MeetingYuk. InterfaceAPI sebagai file kontrak yang berisi API apa saja yang akan digunakan.
+ 
+- SessionManager : berfungsi sebagai mengatur session state management pengguna yang masuk ke dalam aplikasi (seperti 1 time login)
 
 ## Daftar API
 Berikut merupakan daftar API yang digunakan dari Sistem Backend MeetingYuk untuk membangun aplikasi mitra ini :
