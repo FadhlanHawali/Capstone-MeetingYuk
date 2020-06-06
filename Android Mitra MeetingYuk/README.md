@@ -84,8 +84,7 @@ room |
 | | Menambah Akun Bank | https://api.meetingyuk.com/merchant/bank-account/add |
 | | Daftar Akun Bank | https://api.meetingyuk.com/merchant/bank-account |
 | | Riwayat Penarikan Saldo | https://api.meetingyuk.com/merchant/saldo-mitra/withdraw|
-| Pengelolaan Profil | Detail Profil Mitra | https://api.meetingyuk.com/user/merchant/get-
-detail?id=id_merchant |
+| Pengelolaan Profil | Detail Profil Mitra | https://api.meetingyuk.com/user/merchant/get-detail?id=id_merchant |
 | | Mengubah Profil Mitra | https://api.meetingyuk.com/merchant/update-profile |
 | | Menambah Admin | https://api.meetingyuk.com/merchant/account/add-admin |
 | | Menghapus Admin | https://api.meetingyuk.com/merchant/admin/delete/:email |
