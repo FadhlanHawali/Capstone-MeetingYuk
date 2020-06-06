@@ -72,13 +72,10 @@ Berikut merupakan daftar API yang digunakan dari Sistem Backend MeetingYuk untuk
 | | Mengunduh Invoice | https://api.meetingyuk.com/merchant/order/invoice/:id_order/token:token/invoice.pdf |
 | | Menambah Pesanan | https://api.meetingyuk.com/merchant/order/add-order |
 | Pengelolaan Daftar Layanan | Daftar Layanan | https://api.meetingyuk.com/merchant/service |
-| | Edit Layanan | https://api.meetingyuk.com/merchant/service/update/:id_
-service |
+| | Edit Layanan | https://api.meetingyuk.com/merchant/service/update/:id_service |
 | | Menambah Layanan | https://api.meetingyuk.com/merchant/service/add |
-| | Menghapus Layanan | https://api.meetingyuk.com/merchant/service/delete/:id_
-service |
-| Pesan | Daftar Pesan | https://message.meetingyuk.com/message/room/list-
-room |
+| | Menghapus Layanan | https://api.meetingyuk.com/merchant/service/delete/:id_service |
+| Pesan | Daftar Pesan | https://message.meetingyuk.com/message/room/list-room |
 | | Detail Pesan | https://message.meetingyuk.com/message/last |
 | Laporan Statistik Pesanan dan Saldo Merchant | Laporan (Mingguan / 1 Bulan / 4 Bulan / 1 Tahun) | https://api.meetingyuk.com/merchant/order/report/:(week,month,quarter,year) |
 | | Menambah Akun Bank | https://api.meetingyuk.com/merchant/bank-account/add |
