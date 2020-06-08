@@ -68,10 +68,9 @@ Berikut merupakan daftar API yang digunakan dari Sistem Backend MeetingYuk untuk
 | ------ | ------ | ------------ |
 | Pengelolaan Daftar Layanan | Daftar Layanan | https://api.meetingyuk.com/merchant/service |
 | | Edit Layanan | https://api.meetingyuk.com/merchant/service/update/:id_service |
-| Profil Mitra | Gambar Tempat Mitra | https://api.meetingyuk.com/merchant/photos |
 | Pengelolaan Profil | Detail Profil Mitra | https://api.meetingyuk.com/user/merchant/get-detail?id=id_merchant |
 | | Mengubah Profil Mitra | https://api.meetingyuk.com/merchant/update-profile |
-
+| Profil Mitra | Gambar Tempat Mitra | https://api.meetingyuk.com/merchant/photos |
 
 
 
