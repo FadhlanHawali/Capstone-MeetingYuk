@@ -2,7 +2,7 @@
 
 Web landing page MeetingYuk terdiri dari landing page untuk pengguna dan landing page untuk mitra. Web landing page berfungsi sebagai sarana profiling bagi MeetingYuk dan mitra merchant.
 
-### Unduh Aplikasi
+### Menuju Web Landing Page
 Web landing page MeetingYuk dapat dikunjungi melalui link [Web landing page pengguna MeetingYuk](https://meetingyuk.com/user) dan [Web landing page mitra MeetingYuk](https://meetingyuk.com/mitra).
 
 # Arsitektur Project
@@ -66,6 +66,9 @@ Berikut merupakan daftar API yang digunakan dari Sistem Backend MeetingYuk untuk
 
 | Fitur | Activity | API |
 | ------ | ------ | ------------ |
+| Pengelolaan Daftar Layanan | Daftar Layanan | https://api.meetingyuk.com/merchant/service |
+| | Edit Layanan | https://api.meetingyuk.com/merchant/service/update/:id_service |
+| Profil Mitra | Gambar Tempat Mitra | https://api.meetingyuk.com/merchant/photos |
 | Pengelolaan Profil | Detail Profil Mitra | https://api.meetingyuk.com/user/merchant/get-detail?id=id_merchant |
 | | Mengubah Profil Mitra | https://api.meetingyuk.com/merchant/update-profile |
 
