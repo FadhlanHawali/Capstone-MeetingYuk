@@ -5,6 +5,9 @@ Aplikasi MeetingYuk Merchant merupakan salah satu aplikasi MeetingYuk yang dibua
 ### Unduh Aplikasi
 Aplikasi MeetingYuk Merchant dapat diunduh dengan mengunjungi link [berikut][apkmeetingyuk].
 
+### Source code Aplikasi
+Source code dari aplikasi ini terdapat dalam file MeetingYukMerchantApp_MaterialDesign.zip. Untuk menjalankan, perlu dibuka menggunakan IDE Android Studio.
+
 # Arsitektur Project
 Aplikasi ini dibangun menggunakan arsitektur MVP (Model View Presenter).
 ![alt text](mvp.png)
