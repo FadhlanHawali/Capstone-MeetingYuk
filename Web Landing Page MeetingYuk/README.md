@@ -8,36 +8,22 @@ Web landing page MeetingYuk dapat dikunjungi melalui link [Web landing page peng
 # Arsitektur Project
 Web landing page pengguna dan mitra dibangun menggunakan arsitektur MVC (Model View Controller).
 ![alt text](mvc.png)
-- Model : Model mengatur data-data yang ada di web landing page. Untuk melengkapi HTML dan CSS yang berjalan di client side, digunakan Node.JS untuk melengkapi server side-nya.
-- View : Untuk menciptakan landing page yang interaktif terhadap user, digunakan DOM(Document Object Model). DOM digunakan untuk membuat image slider, menampilkan error, dan  mengubah navigation menu. jQuery juga digunakan untuk menyederhanakan  HTML dan CSS
-- Controller : Controller menghubungkan antara model dan view. Contohnya ketika sebuah button(view) ditekan, maka controller akan menghubungkan dengan model dan melakukan task yang sudah ditentukan, seperti menyimpan di storage atau redirect ke halaman lain.
+- Model : Model mengatur data-data yang ada di web landing page dan menghubungkan landing page dengan database sehingga dapat mengatur, menyiapkan, memanipulasi dan mengorganisasikan data (dari database) sesuai dengan instruksi dari controller.
+- View : Merepresentasikan User Interface, dimana View berinteraksi langsung dengan end user(pengguna). Bertugas untuk menyajikan informasi kepada pengguna sesuai dengan instruksi dari controller.
+- Controller : Menghubungkan antara Model dan View, controller menjawab aksi yang dilakukan user terhadap View. Controller berfungsi  mengatur apa yang harus dilakukan model, dan view mana yang harus ditampilkan berdasarkan permintaan dari user.
 
 ## Struktur Project
-Struktur dari project ini dibagi berbasis per fitur (tidak langsung membagi berdasarkan  arsitektur)
+Berikut merupakan struktur dari web landing page MeetingYuk.
 ```
 app
 │   README.md
 │
-└───Fitur 1
+└───Fungsi
 │   │   Model
-│   │   [Fitur 1]View
-│   │   [Fitur 1]Contract
-│   │   [Fitur 1]Controller
-│   |   [Fitur 1]Adapter
+│   │   View
+│   │   Controller
 |   
-└───Fitur 2
-│   │   Model
-│   │   [Fitur 2]Activity
-│   │   [Fitur 2]Contract
-│   │   [Fitur 2]Presenter
-│  
-└───Utils
-│  
 └───Database
-│   └───Converter
-|       |   converter 1
-│   └───DAO
-│       │   [fitur]DAO
 │  
 └───API
 |   |   APIUtils
@@ -45,21 +31,16 @@ app
 |
 └───....
 ```
-- [Fitur] Activity : berfungsi sebagai layer View dimana layer menampilkan data dan memberikan interaksi ke pengguna
+- Model : berisi deklarasi aturan bagaimana data dapat diubah dan dimanipulasi. Data-data berupa live data(API) nantinya akan dipanggil oleh controller. Digunakan pula Node.JS untuk server side programmingnya.
 
-- [Fitur] Contract : berfungsi sebagai "kontrak" fungsi apa saja yang dapat dilakukan dalam sebuah View dan Presenter. Kontrak ini berfungsi sebagai skeleton nantinya fitur ini dapat melakukan hal apa saja
+- View : digunakan DOM(Document Object Model). DOM digunakan untuk membuat image slider, menampilkan error, dan  mengubah navigation menu. jQuery juga digunakan untuk menyederhanakan  HTML dan CSS. Selain itu digunakan Bootstrap 3.0 agar web yang lebih responsif dan menyederhanakan code.
 
-- [Fitur] Presenter : berfungsi untuk mengolah data dari data yang dimasukkan oleh pengguna melalui View
+- Controller : mengontrol jalannya landing page agar dinamis. Mengatur request yang masuk dan memberikan feedback tergantung request pengguna. 
 
-- Model : berfungsi untuk definisi aturan bagaimana data nantinya dapat diubah dan dimanipulasi. Data ini bisa berupa data dari live data (API) maupun data yang digunakan dalam database.
+- Database : terdiri dari pengaturan yang berhubungan dengan penggunaan Room Database. Berisi yang data berkaitan dengan mitra MeetingYuk.
 
-- Utils : folder yang berfungsi sebagai helper seperti konversi unix timestamp ke java timestamp, menampilkan loading animation, dll.
+- API : berisi setup dan deklarasi API yang akan digunakan. Terdapat 2 File didalamnya yaitu APIUtils dan InterfaceAPI. APIUtils berfungsi sebagai file yang membantu mendeklarasikan kebutuhan API. Sedangkan InterfaceAPI berisi API apa saja yang akan digunakan.
 
-- Database : berisi sebagai seluruh pengaturan yang berkaitan dengan penggunaan Room Database. Terdapat 2 folder lagi yaitu Converted dan DAO. Converter berfungsi untuk konversi data dengan tipe data kompleks (Array, JSONAray, Custom Class) menjadi ke bentuk tipe data simple (String) dan sebaliknya agar data dapat disimpan dalam Room Database. DAO berfungsi untuk menyimpan function yang berisi Query Query apa saja yang dapat dilakukan.
-
-- API : berisi sebagai deklarasi API saja yang akan digunakan beserta dengan deklarasi request dan response body yang akan digunakan. Terdapat 2 File yaitu APIUtils dan InterfaceAPI. APIUtils berfungsi sebagai file pembantu dalam mendeklarasikan kebutuhan API dalam kasus ini membangun Base URL API MeetingYuk. InterfaceAPI sebagai file kontrak yang berisi API apa saja yang akan digunakan.
- 
-- SessionManager : berfungsi sebagai mengatur session state management pengguna yang masuk ke dalam aplikasi (seperti 1 time login)
 
 ## Daftar API
 Berikut merupakan daftar API yang digunakan dari Sistem Backend MeetingYuk untuk membangun aplikasi mitra ini :
