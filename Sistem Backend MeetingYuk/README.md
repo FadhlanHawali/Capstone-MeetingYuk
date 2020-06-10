@@ -3,7 +3,7 @@
 Pengembangan sistem backend MeetingYuk untuk melakukan integrasi aplikasi mitra dengan aplikasi MeetingYuk yang sudah ada.
 
 ### Dokumentasi API
-Dokumentasi API dapat diakses pada [dokumentasi_api]
+Dokumentasi API dapat diakses pada [link berikut][dokumentasi_api]
 
 # Arsitektur Project
 Aplikasi ini dibangun menggunakan clean architecture
@@ -74,4 +74,4 @@ src
 |
 ```
 
-[dokumentasi_api]: http://contoh.com
+[dokumentasi_api]: https://documenter.getpostman.com/view/1901554/SzzdE2Bc
