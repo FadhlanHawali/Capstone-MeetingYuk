@@ -5,6 +5,9 @@ Web landing page MeetingYuk terdiri dari landing page untuk pengguna dan landing
 ### Menuju Web Landing Page
 Web landing page MeetingYuk dapat dikunjungi melalui link [Web landing page pengguna MeetingYuk](https://meetingyuk.com/user) dan [Web landing page mitra MeetingYuk](https://meetingyuk.com/mitra).
 
+### Source Code Web Landing Page
+Source code web landing page MeetingYuk dapat didownload dalam file [landing-page-develop.zip]
+
 # Arsitektur Project
 Web landing page pengguna dan mitra dibangun menggunakan arsitektur MVC (Model View Controller).
 ![alt text](mvc.png)
